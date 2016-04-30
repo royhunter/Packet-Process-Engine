@@ -1,0 +1,25 @@
+// Acl Rule related
+
+// Set rule SMAC DMAC SIP DIP SPORT DPORT PROTOCOL TIME_START TIME_END %Y-%m-%d/%H:%M:%S %Y-%m-%d/%H:%M:%S ACTION
+add rule smac <MACADDR:smac> dmac <MACADDR:dmac> sip <IPV4ADDR:sip> mask <UINT:sip_mask> dip <IPV4ADDR:dip> mask <UINT:dip_mask> sport_start <UINT:sport_start> sport_end <UINT:sport_end> dport_start <UINT:dport_start> dport_end <UINT:dport_end> proto_start <UINT:proto_start> proto_end <UINT:proto_end> <STRING:time_start> <STRING:time_end> <LIST:fw,drop:action> <LIST:enable,disable:log>
+
+// delete rule
+delete rule smac <MACADDR:smac> dmac <MACADDR:dmac> sip <IPV4ADDR:sip> mask <UINT:sip_mask> dip <IPV4ADDR:dip> mask <UINT:dip_mask> sport_start <UINT:sport_start> sport_end <UINT:sport_end> dport_start <UINT:dport_start> dport_end <UINT:dport_end> proto_start <UINT:proto_start> proto_end <UINT:proto_end> <STRING:time_start> <STRING:time_end> <LIST:fw,drop:action> <LIST:enable,disable:log>
+
+// Show rule
+show rule
+
+// Commit rule all
+commit rule
+
+// delete rule all
+delete rule all
+
+// delete rule id
+delete rule <UINT:id>
+
+// set default action
+set rule default action <LIST:fw,drop:action>
+
+// show default action
+show rule default action

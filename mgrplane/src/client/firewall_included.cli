@@ -1,0 +1,40 @@
+// Firewall feature related, such as decode, flow, fragment...
+
+// Show firewall config
+show firewall config
+
+// Show firewall flow stat
+show firewall flow stat
+
+// Clear firewall flow stat
+clear firewall flow stat
+
+// Set firewall syncheck able
+set firewall syncheck <LIST:enable,disable:able>
+
+// Show attack stat
+show attack stat
+
+// Set firewall unsupport proto fw/drop
+set firewall unsupport proto <LIST:fw,drop:action>
+
+// Set portscan able
+set portscan <LIST:enable,disable:able>
+
+// Set portscan action
+set portscan action <LIST:fw,drop:action>
+
+// Set portscan freq
+set portscan freq <UINT:pps>
+
+// Set attack defend time <UINT:seconds>
+set attack defend time <UINT:seconds>
+
+// Set synflood start <IPV4ADDR:start> end <IPV4ADDR:end> percent <UINT:percent>
+set synflood start <IPV4ADDR:start> end <IPV4ADDR:end> percent <UINT:percent>
+
+// Set modbus value enable/disable
+set modbus value <LIST:enable,disable:able>
+
+// set modbus func  addr  value_min   value_max
+set modbus func <UINT:func> addr <UINT:addr>  value_min <UINT:min> value_max <UINT:max>

@@ -1,0 +1,22 @@
+// This is the CLI syntax file of a sec-fw program that handles
+
+// This line tests if comments are handled correctly
+
+#include "rule_included.cli"
+
+#include "octeon_included.cli"
+
+#include "firewall_included.cli"
+
+
+// List all available commands with a substring 'filter' in it.
+help { <STRING:filter> }
+
+// Enable privileged mode
+enable privileged-mode
+
+// Disable privileged mode
++ disable privileged-mode
+
+// Leave the database
+quit

@@ -1,0 +1,43 @@
+// octeon related command, such as memory, statistic...
+
+// Show dp build time
+show dp build time
+
+// Show pkt stat
+show pkt stat
+
+// Clear pkt stat
+clear pkt stat
+
+// Show tcpstream stat
+show tcpstream stat
+
+// Clear tcpstream stat
+clear tcpstream stat
+
+// Set tcpstream track able
+set tcpstream track <LIST:enable,disable:able>
+
+// Set tcpstream reasm able
+set tcpstream reasm <LIST:enable,disable:able>
+
+// Show interface stat
+show interface <UINT:id>
+
+// Show FPA stat
+show fpa
+
+// Show mem pool
+show mem pool
+
+// Set debug print
+set debug print <LIST:rx,pktdump,decode,ethernet,ipv4,tcp,udp,flow,defrag,acl,l7,dpcmd,streamtcp_dbg,streamtcp_track,streamtcp_reasm,attack_dbg:dbg>
+
+// Clear debug print
+clear debug print
+
+// Set defrag fragment max
+set defrag fragment max <UINT:num>
+
+// Set direct fw able
+set direct fw <LIST:enable,disable:able> sleep_time <UINT:sleep>
